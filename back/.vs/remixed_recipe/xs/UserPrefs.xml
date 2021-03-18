@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{A1AC7662-1EDE-4D01-B592-60AEACCA9960}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="remixed_recipe" expanded="True">
+            <Node name="docker-compose" expanded="True">
+              <Node name=".dockerignore" selected="True" />
+              <Node name="docker-compose.yml" expanded="True" />
+            </Node>
+            <Node name="RemixedRecipe" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RemixedRecipe PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

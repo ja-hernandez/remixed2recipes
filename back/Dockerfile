@@ -1,4 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1
+COPY . /app
+WORKDIR /app
+RUN ["dotnet", "restore"]
+RUN ["dotnet", "build"]
 
 COPY ./entrypoint.sh /
 RUN sed -i 's/\r//' /entrypoint.sh
