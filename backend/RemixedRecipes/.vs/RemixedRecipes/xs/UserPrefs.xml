@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{D0E3C215-7F19-46B3-A474-F9E8DD2A4EDE}|Default">
+  <MonoDevelop.Ide.ItemProperties.RemixedRecipes PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/RecipeController.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="38" Column="42" />
+      <File FileName="Models/ApiDbContext.cs" />
+      <File FileName="Maps/RecipeMap.cs" />
+      <File FileName="Controllers/RecipeController.cs" Line="27" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RemixedRecipes" expanded="True">
+            <Node name="RemixedRecipes" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="RecipeController.cs" selected="True" />
+              </Node>
+              <Node name="Maps" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  remixedrecipe:
-    image: ${DOCKER_REGISTRY-}remixedrecipe
-    build:
-      context: .
-      dockerfile: RemixedRecipe/Dockerfile
