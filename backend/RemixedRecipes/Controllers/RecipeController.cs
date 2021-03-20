@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using RemixedRecipes.Models;
 
 namespace RemixedRecipes.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class RecipeController : ControllerBase
     {
         private readonly ApiDbContext _context;
@@ -17,14 +18,9 @@ namespace RemixedRecipes.Controllers
         }
 
         [HttpGet]
-        public object Get()
+        public ActionResult<IEnumerable<Recipe>> Get()
         {
-            return _context.Recipes.Where(r => r.RecipeName.Contains("Recipe")).Select((s) => new
-            {
-                Id = s.Id,
-                RecipeName = s.RecipeName,
-                InstructionsId = s.InstructionsId
-            }).ToList();
+            return _context.Recipes.ToList();
         }
     }
 }

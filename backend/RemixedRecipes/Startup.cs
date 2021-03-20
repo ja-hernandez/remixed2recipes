@@ -39,6 +39,8 @@ namespace RemixedRecipes
 
             services.AddDbContext<ApiDbContext>(options =>
             options.UseNpgsql(connectionString));
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +52,14 @@ namespace RemixedRecipes
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RemixedRecipes v1"));
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Recipe API v1");
+            });
+
 
             app.UseHttpsRedirection();
 

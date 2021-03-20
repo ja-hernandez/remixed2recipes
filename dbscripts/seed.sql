@@ -1,4 +1,7 @@
 \connect recipedb
+CREATE USER recipeadmin;
+GRANT ALL PRIVILEGES ON DATABASE recipedb to recipeadmin;
+
 CREATE TABLE recipe
 (
  id serial PRIMARY KEY,
@@ -7,7 +10,7 @@ CREATE TABLE recipe
 
 );
 ALTER TABLE "recipe" OWNER TO recipeadmin;
-Insert into recipe(recipe_name) values( ‘Tasty Pie 1');
-Insert into recipe(recipe_name) values( ‘Tasty Pie 2');
-Insert into recipe(recipe_name) values( ‘Tasty Pie 3');
-Insert into recipe(recipe_name) values( ‘Tasty Pie 4');
+Insert into recipe(recipe_name, instructions_id) values('Tasty Pie 1', 1);
+Insert into recipe(recipe_name, instructions_id) values('Tasty Pie 2', 2);
+Insert into recipe(recipe_name, instructions_id) values('Tasty Pie 3', 3);
+Insert into recipe(recipe_name, instructions_id) values('Tasty Pie 4', 4);
