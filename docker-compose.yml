@@ -12,14 +12,21 @@ services:
     depends_on:
       - db
     environment: 
-      DB_CONNECTION_STRING: "host=db;port=5432;database=recipedb;username=recipeadmin;password=recipeadmin"
+      DB_CONNECTION_STRING: "host=db;port=5432;database=recipedb;username=postgres;password=postgres"
 
   db:
     image: postgres:latest
     environment: 
-      POSTGRES_USERNAME: "recipeadmin"
-      POSTGRES_PASSWORD: "recipeadmin"
+      POSTGRES_USERNAME: "postgres"
+      POSTGRES_PASSWORD: "postgres"
       POSTGRES_DB: "recipedb"
     volumes:
       - db_volume:/var/lib/postgresql/data
-      - ./dbscripts/seed.sql :/docker-entrypoint-initdb.d/seed.sql
+      - ./dbscripts/seed.sql:/docker-entrypoint-initdb.d/seed.sql
+
+  client:
+    build: ./frontend
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/app
