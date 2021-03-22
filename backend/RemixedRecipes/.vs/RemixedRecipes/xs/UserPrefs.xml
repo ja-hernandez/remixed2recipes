@@ -1,28 +1,28 @@
 ﻿<Properties StartupConfiguration="{D0E3C215-7F19-46B3-A474-F9E8DD2A4EDE}|Default">
   <MonoDevelop.Ide.ItemProperties.RemixedRecipes PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/RecipeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
       <File FileName="Models/ApiDbContext.cs" Line="42" Column="1" />
-      <File FileName="Models/Unit.cs" Line="13" Column="70" />
-      <File FileName="Models/Preparation.cs" Line="12" Column="1" />
-      <File FileName="Models/Quantity.cs" Line="14" Column="22" />
-      <File FileName="Models/Ingredient.cs" Line="18" Column="1" />
-      <File FileName="Models/RecipeIngredient.cs" Line="24" Column="1" />
-      <File FileName="Models/Instructions.cs" Line="14" Column="1" />
-      <File FileName="Models/Recipe.cs" Line="9" Column="30" />
+      <File FileName="Models/Unit.cs" />
+      <File FileName="Models/Preparation.cs" />
+      <File FileName="Models/Quantity.cs" />
+      <File FileName="Models/Ingredient.cs" />
+      <File FileName="Models/RecipeIngredient.cs" />
+      <File FileName="Models/Instructions.cs" />
+      <File FileName="Models/Recipe.cs" />
       <File FileName="Controllers/RecipeController.cs" Line="65" Column="32" />
-      <File FileName="Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/WeatherForecastController.cs" />
+      <File FileName="Startup.cs" Line="39" Column="112" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RemixedRecipes" expanded="True">
             <Node name="RemixedRecipes" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="RecipeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
