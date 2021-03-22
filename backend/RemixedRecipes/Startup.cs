@@ -35,7 +35,8 @@ namespace RemixedRecipes
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RemixedRecipes", Version = "v1" });
             });
 
-            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+            //var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+            var connectionString = "host=db;port=5432;database=recipedb;username=postgres;password=postgres";
 
             services.AddDbContext<ApiDbContext>(options =>
             options.UseNpgsql(connectionString));
