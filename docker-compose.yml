@@ -1,32 +1,32 @@
-version: "3"
+version: '3.4'
 
 volumes:
-  local_postgres_data: {}
+  db_volume:
 
-services: 
-  web:
-    build: ./back
+services:
+  remixedapi:
+    image: remixedapi:latest
+    build: ./backend
     ports:
-      - "5000:5000"
-      - "5001:5001"
-    volumes:
-      - ./back:/app
-      - /app/RemixedRecipe/bin
-      - /app/RemixedRecipe/obj
-    depends_on: 
+      - "8000:80"
+    depends_on:
       - db
+    environment: 
+      DB_CONNECTION_STRING: "host=db;port=5432;database=recipedb;username=postgres;password=postgres"
 
   db:
-    image: postgres:13
+    image: postgres:latest
     environment: 
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USERNAME: postgres
-    volumes: 
-      - local_postgres_data:/var/lib/postgresql/data
+      POSTGRES_USERNAME: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "recipedb"
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+      - ./dbscripts/seed.sql:/docker-entrypoint-initdb.d/seed.sql
 
   client:
-    build: ./front
+    build: ./frontend
     ports:
       - "4200:4200"
-    volumes: 
-    - ./front:/app
+    volumes:
+      - ./frontend:/app
