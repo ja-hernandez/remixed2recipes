@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{D0E3C215-7F19-46B3-A474-F9E8DD2A4EDE}|Default">
   <MonoDevelop.Ide.ItemProperties.RemixedRecipes PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/RecipeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Recipe.cs">
     <Files>
       <File FileName="Startup.cs" Line="60" Column="80" />
       <File FileName="Models/ApiDbContext.cs" />
       <File FileName="Maps/RecipeMap.cs" Line="1" Column="1" />
       <File FileName="Controllers/RecipeController.cs" Line="23" Column="46" />
-      <File FileName="Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/WeatherForecastController.cs" />
+      <File FileName="Models/Instructions.cs" Line="5" Column="6" />
+      <File FileName="Models/Recipe.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RemixedRecipes" expanded="True">
             <Node name="RemixedRecipes" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="RecipeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Maps" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Recipe.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
